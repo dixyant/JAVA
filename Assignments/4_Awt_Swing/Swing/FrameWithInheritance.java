@@ -3,9 +3,10 @@ import javax.swing.JButton;
 import javax.swing.JTextField;
 import javax.swing.JLabel;
 
-class Framewithassociation extends JFrame {
+class Framewithinheritance extends JFrame {
   public static void main(String[] args){
 
+        Framewithinheritance a = new Framewithinheritance();
     
     JTextField num1, num2, result;
     num1 = new JTextField();
