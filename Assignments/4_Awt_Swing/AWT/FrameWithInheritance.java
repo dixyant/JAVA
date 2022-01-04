@@ -3,9 +3,10 @@ import java.awt.Button;
 import java.awt.TextField;
 import java.awt.Label;
 
-class FrameWithAssociation {
-  public static void main(String[] args){
+class FrameWithInheritance extends Frame {
+    public static void main(String[] args) {
 
+    FrameWithInheritance a = new FrameWithInheritance();
     
     TextField num1, num2, result;
     num1 = new TextField();
@@ -37,22 +38,19 @@ class FrameWithAssociation {
     resultLabel.setBounds(50, 200, 200, 30);
 
 
-    Frame f = new Frame("Calculator");
-    f.add(num1);
-    f.add(num2);
-    f.add(result);
-    f.add(add);
-    f.add(subtract);
-    f.add(divide);
-    f.add(multiply);
-    f.add(num1Label);
-    f.add(num2Label);
-    f.add(resultLabel);
-    f.setSize(500, 500);
-    f.setLayout(null);    
-    f.setVisible(true);
 
-
-
+    a.add(num1);
+    a.add(num2);
+    a.add(result);
+    a.add(add);
+    a.add(subtract);
+    a.add(divide);
+    a.add(multiply);
+    a.add(num1Label);
+    a.add(num2Label);
+    a.add(resultLabel);
+    a.setSize(500, 500);
+    a.setLayout(null);    
+    a.setVisible(true);
   }
 }
